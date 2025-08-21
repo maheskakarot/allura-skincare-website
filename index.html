@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allura Skincare - True Beauty, All Yours.</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind 'bg-slate-50' */
+            color: #334155; /* Tailwind 'text-slate-700' */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem; /* Tailwind 'p-6' */
+        }
+        .product-card {
+            background-color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 224px; /* h-56 */
+            object-fit: cover;
+        }
+        .list-style-none li {
+            padding-left: 0;
+        }
+        .list-style-none li::before {
+            content: "✓"; /* Checkmark for key features */
+            color: #22c55e; /* Green-500 */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            margin-right: 0.5em;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header/Navigation Bar -->
+    <header class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white shadow-lg">
+        <nav class="container flex flex-col md:flex-row items-center justify-between py-4">
+            <a href="#" class="text-4xl font-extrabold tracking-tight rounded-lg p-2 mb-4 md:mb-0">
+                ALLURA
+            </a>
+            <div class="flex flex-wrap justify-center space-x-4 md:space-x-6">
+                <a href="#about" class="text-lg font-medium hover:text-blue-200 transition duration-300 rounded-lg p-2">About Us</a>
+                <a href="#facial-kits" class="text-lg font-medium hover:text-blue-200 transition duration-300 rounded-lg p-2">Facial Kits</a>
+                <a href="#peel-off-masks" class="text-lg font-medium hover:text-blue-200 transition duration-300 rounded-lg p-2">Peel-Off Masks</a>
+                <a href="#pedicure-kits" class="text-lg font-medium hover:text-blue-200 transition duration-300 rounded-lg p-2">Pedicure Kits</a>
+                <a href="#contact" class="text-lg font-medium hover:text-blue-200 transition duration-300 rounded-lg p-2">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-6 text-center shadow-inner rounded-b-xl">
+        <div class="container">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+                ALLURA – True Beauty, All Yours.
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 opacity-90 max-w-3xl mx-auto">
+                Redefining salon skincare with natural actives, visible results, and uncompromised quality.
+            </p>
+            <a href="#facial-kits" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-100 hover:scale-105 transition duration-300 transform">
+                Explore Our Signature Range
+            </a>
+        </div>
+    </section>
+
+    <!-- About Allura Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container text-center max-w-4xl">
+            <h2 class="text-4xl font-bold mb-8 text-blue-800">About Allura</h2>
+            <p class="text-lg text-slate-700 mb-6">
+                Launched in June 2025, Allura is a dynamic startup dedicated to redefining salon skincare. As both manufacturer and supplier, we bring salon-grade formulations powered by natural actives, free from PVA and harsh chemicals. Every product is designed with precision to deliver visible results instantly, ensuring client satisfaction and repeat trust.
+            </p>
+            <p class="text-lg text-slate-700 mb-6">
+                At Allura, we focus on quality, safety, and innovation, making our range ideal for premium salons looking for high-performance skincare solutions. From peel-off masks to fruit facials, each product is crafted to nourish, treat, and transform.
+            </p>
+            <p class="text-lg font-semibold text-blue-700">
+                Join the Allura movement—where science meets nature, and your salon gets the edge it deserves.
+            </p>
+        </div>
+    </section>
+
+    <!-- Signature Range Introduction -->
+    <section class="bg-blue-50 py-12 px-6 text-center">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">Explore Our Signature Range:</h2>
+            <p class="text-xl text-slate-700 max-w-3xl mx-auto">
+                Stand out with premium results that keep clients coming back – let your services speak through our products.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6 mt-8 text-lg font-medium text-blue-700">
+                <span class="bg-blue-100 px-4 py-2 rounded-full shadow-sm">🔸 Fruit Facial Kits</span>
+                <span class="bg-blue-100 px-4 py-2 rounded-full shadow-sm">🔸 Peel-Off Masks</span>
+                <span class="bg-blue-100 px-4 py-2 rounded-full shadow-sm">🔸 Pedicure Kits</span>
+                <span class="bg-blue-100 px-4 py-2 rounded-full shadow-sm">🔸 Pedicure Salt Soaks</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Facial Kits Section -->
+    <section id="facial-kits" class="py-16 md:py-24 bg-white">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-center mb-16 text-blue-800">Allura Facial Kits (4 & 5 Step)</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Facial Kit Card - Orange -->
+                <div class="product-card">
+                    <img src="https://placehold.co/600x400/FFDDC1/FF8C00?text=Orange+Facial+Kit" alt="Orange Facial Kit" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-700">Orange Facial Kit</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">
+                            Rich in Vitamin C, this kit brightens dull skin, helps control oil & acne, and refreshes tired skin.
+                        </p>
+                        <ul class="list-style-none text-slate-700 space-y-2">
+                            <li>Vitamin C Boost for Instant Brightness</li>
+                            <li>Made with Real Fruit Extracts</li>
+                            <li>Powder-Based for Longer Shelf Life</li>
+                            <li>Suitable for All Skin Types</li>
+                            <li>Enriched with Antioxidants & Vitamins</li>
+                            <li>Instant Glow & Visible Results</li>
+                            <li>Perfect for Regular Salon Use</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Facial Kit Card - Blueberry -->
+                <div class="product-card">
+                    <img src="https://placehold.co/600x400/E0E0FF/6A5ACD?text=Blueberry+Facial+Kit" alt="Blueberry Facial Kit" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-700">Blueberry Facial Kit</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">
+                            Packed with antioxidants, fighting signs of aging while calming sensitive or irritated skin. Improves skin elasticity.
+                        </p>
+                        <ul class="list-style-none text-slate-700 space-y-2">
+                            <li>Anti-Ageing Glow with Berry Goodness</li>
+                            <li>Made with Real Fruit Extracts</li>
+                            <li>Powder-Based for Longer Shelf Life</li>
+                            <li>Suitable for All Skin Types</li>
+                            <li>Enriched with Antioxidants & Vitamins</li>
+                            <li>Instant Glow & Visible Results</li>
+                            <li>Perfect for Regular Salon Use</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Facial Kit Card - Strawberry -->
+                <div class="product-card">
+                    <img src="https://placehold.co/600x400/FFE0E6/FF0000?text=Strawberry+Facial+Kit" alt="Strawberry Facial Kit" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-700">Strawberry Facial Kit</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">
+                            Rich in AHAs, gently exfoliates & lightens tan, fights acne, tightens pores, leaving a sweet glow.
+                        </p>
+                        <ul class="list-style-none text-slate-700 space-y-2">
+                            <li>Sweet Skin Detox with Strawberry Freshness</li>
+                            <li>Made with Real Fruit Extracts</li>
+                            <li>Powder-Based for Longer Shelf Life</li>
+                            <li>Suitable for All Skin Types</li>
+                            <li>Enriched with Antioxidants & Vitamins</li>
+                            <li>Instant Glow & Visible Results</li>
+                            <li>Perfect for Regular Salon Use</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-16 text-center max-w-3xl mx-auto p-8 bg-blue-50 rounded-xl shadow-inner">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-700">Why Choose Allura's Facial Kit?</h3>
+                <ul class="text-lg text-slate-700 space-y-2 list-style-none">
+                    <li>Nature's Glow in Every Step</li>
+                    <li>Fruit-Powered Radiance in Just 4 Steps</li>
+                    <li>Salon-Grade Facial, Naturally!</li>
+                    <li>Glow Naturally with Real Fruit Power</li>
+                    <li>Juicy Skin Revival in 15 Minutes</li>
+                    <li>No Harsh Chemicals or PVA</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Peel-Off Masks Section -->
+    <section id="peel-off-masks" class="py-16 md:py-24 bg-slate-50">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-center mb-16 text-blue-800">Allura Peel-Off Masks</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Peel-Off Mask Card - Orange -->
+                <div class="product-card">
+                    <img src="https://placehold.co/600x400/FADDC1/FF8C00?text=Orange+Peel-Off+Mask" alt="Orange Peel-Off Mask" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-700">Orange Radiance Peel-Off Mask</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">
+                            "Citrus-Infused Brightness for Dull, Tired Skin." Rich in Vitamin C & Fruit Enzymes.
+                        </p>
+                        <ul class="list-style-none text-slate-700 space-y-2">
+                            <li>Reduces pigmentation & sun tan</li>
+                            <li>Gives instant freshness and even tone</li>
+                            <li>Ideal for: Brightening | Oily to Normal Skin</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Peel-Off Mask Card - Activated Charcoal -->
+                <div class="product-card">
+                    <img src="https://placehold.co/600x400/D3D3D3/36454F?text=Charcoal+Peel-Off+Mask" alt="Activated Charcoal Peel-Off Mask" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-700">Activated Charcoal Detox Peel-Off Mask</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">
+                            "Deep Cleanse. Total Detox. Visible Purity." Enriched with Activated Charcoal & Epsom Salt.
+                        </p>
+                        <ul class="list-style-none text-slate-700 space-y-2">
+                            <li>Pulls out blackheads, dirt & toxins</li>
+                            <li>Refines pores and controls oil</li>
+                            <li>Ideal for: Acne-Prone | Oily | Congested Skin</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Peel-Off Mask Card - Rose -->
+                <div class="product-card">
+                    <img src="https://placehold.co/600x400/FDEEF2/D8BFD8?text=Rose+Peel-Off+Mask" alt="Rose Peel-Off Mask" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-700">Rose Soothing Peel-Off Mask</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">
+                            "Gentle. Calming. Pure Petal Glow." Made with natural rose powder & soothing actives.
+                        </p>
+                        <ul class="list-style-none text-slate-700 space-y-2">
+                            <li>Reduces redness, inflammation & dullness</li>
+                            <li>Leaves skin soft, smooth & glowing</li>
+                            <li>Ideal for: Sensitive | Dry | Mature Skin</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-16 text-center max-w-3xl mx-auto p-8 bg-blue-100 rounded-xl shadow-inner">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-700">Key Benefits of Allura Peel-Off Masks:</h3>
+                <ul class="text-lg text-slate-700 space-y-2 list-style-none">
+                    <li>Powder Formula – Long Shelf Life & Travel Friendly</li>
+                    <li>Peels Off Clean in One Go – No Mess, No Fuss</li>
+                    <li>Free from PVA, Sulphates & Harsh Chemicals</li>
+                    <li>Visible Results in Just One Use</li>
+                    <li>Crafted for Salon Use – Loved by Professionals</li>
+                    <li>Natural Fragrance & Gentle on Skin</li>
+                    <li>Perfect for: Express Facial Services, Pre-Makeup Glow, Post-Cleanup Pore Tightening, DIY Home Facial Routines</li>
+                    <li>Tailored for All Skin Types</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manicure Pedicure Kits Section -->
+    <section id="pedicure-kits" class="py-16 md:py-24 bg-white">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-center mb-16 text-blue-800">Allura 6-Step Mani-Pedi Spa Kit</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Manicure Pedicure Kit Main Card -->
+                <div class="product-card col-span-1 md:col-span-2 lg:col-span-1">
+                    <img src="https://placehold.co/600x400/F5E0E0/C04040?text=Mani-Pedi+Kit" alt="6-Step Mani-Pedi Spa Kit" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-3 text-blue-700">Complete 6-Step Spa Experience</h3>
+                        <p class="text-slate-600 mb-4 leading-relaxed">
+                            Cleanse, Exfoliate, Nourish, and Rejuvenate with natural fruit & floral extracts.
+                        </p>
+                        <ul class="list-style-none text-slate-700 space-y-2">
+                            <li>Salon-Grade Formula for Instant Results</li>
+                            <li>No Harsh Chemicals, No PVA – 100% Skin Friendly</li>
+                            <li>Smoothes Rough Skin & Brightens Dull Areas</li>
+                            <li>Perfect for Tanning, Cracked Heels, and Dry Cuticles</li>
+                            <li>Refreshing Aroma Therapy with Each Use</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Key Benefits & Kit Contents -->
+                <div class="flex flex-col gap-10 col-span-1 md:col-span-2 lg:col-span-1">
+                    <div class="bg-blue-50 p-8 rounded-xl shadow-inner flex-1">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-700">Key Skin Benefits by Ingredient:</h3>
+                        <ul class="list-style-none text-lg text-slate-700 space-y-2">
+                            <li>**Lavender:** Antibacterial, reduces inflammation, deeply relaxing.</li>
+                            <li>**Rose:** Tones the skin, soothes irritation, hydrates & softens.</li>
+                            <li>**Strawberry:** Rich in Vitamin C, brightens skin, fades tan & dullness.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50 p-8 rounded-xl shadow-inner flex-1">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-700">Our Premium 6-Step Kit Contains:</h3>
+                        <ol class="text-lg text-slate-700 space-y-2 list-decimal list-inside">
+                            <li>CLEANSER</li>
+                            <li>SOAK SALT</li>
+                            <li>CUTICLE CREAM</li>
+                            <li>SCRUB</li>
+                            <li>MASSAGE CREAM</li>
+                            <li>FOOT MASK</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center max-w-4xl mx-auto p-8 bg-blue-100 rounded-xl shadow-inner">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-700">Why Choose Allura's Mani-Pedi Kit?</h3>
+                <ul class="text-lg text-slate-700 space-y-2 list-style-none">
+                    <li>Deep Cleansing + Detan + Hydration</li>
+                    <li>Visible Results from 1st Use</li>
+                    <li>Easy-to-Use 6-Step Process</li>
+                    <li>Suitable for All Skin Types</li>
+                    <li>Crafted for Professional Salon Use</li>
+                    <li>Perfect for salons looking to maximize profit with quality.</li>
+                    <li>High performance, easy-to-apply, and customer-friendly in every step.</li>
+                </ul>
+            </div>
+
+            <!-- Pedicure Salt Soaks (from signature range) -->
+            <h3 class="text-3xl font-bold text-center mb-10 mt-20 text-blue-800">Allura Pedicure Salt Soaks</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-3xl mx-auto">
+                <div class="product-card">
+                    <img src="https://placehold.co/600x400/FADDE1/B54242?text=Rose+Salt+Soak" alt="Rose Pedicure Salt Soak" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <h4 class="text-xl font-semibold mb-2 text-blue-700">Rose Pedicure Salt Soak</h4>
+                        <p class="text-slate-600">
+                            Relaxing and soothing, with the gentle aroma of rose.
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/600x400/E5F4DF/4E7D3F?text=Lavender+Salt+Soak" alt="Lavender Pedicure Salt Soak" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <h4 class="text-xl font-semibold mb-2 text-blue-700">Lavender Pedicure Salt Soak</h4>
+                        <p class="text-slate-600">
+                            Calming and refreshing, perfect for winding down.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-blue-700 text-white py-16 px-6 text-center rounded-t-xl shadow-inner">
+        <div class="container">
+            <h2 class="text-4xl font-bold mb-6">Partner with Allura Today!</h2>
+            <p class="text-xl mb-10 opacity-90 max-w-2xl mx-auto">
+                Elevate your salon's offerings with high-performance, natural skincare solutions.
+            </p>
+            <a href="#contact" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-100 hover:scale-105 transition duration-300 transform">
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Details Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-center mb-16 text-blue-800">Contact Allura</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Contact Information -->
+                <div class="bg-slate-50 p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-6 text-blue-700">Reach Out to Us</h3>
+                    <p class="text-slate-600 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 4v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4m0-4l9-6 9 6"></path></svg>
+                        <span class="font-medium">Email:</span> <a href="mailto:info@alluraskincare.com" class="ml-2 text-blue-600 hover:underline">info@alluraskincare.com</a>
+                    </p>
+                    <p class="text-slate-600 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span class="font-medium">Phone:</span> <a href="tel:+1234567890" class="ml-2 text-blue-600 hover:underline">+1 (234) 567-890</a>
+                    </p>
+                    <p class="text-slate-600 flex items-start">
+                        <svg class="w-6 h-6 mr-3 text-blue-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <span class="font-medium">Address:</span> <span class="ml-2">123 Allura Lane, Wellness City, State, 12345</span>
+                    </p>
+                </div>
+
+                <!-- Contact Form (Placeholder) -->
+                <div class="bg-slate-50 p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-6 text-blue-700">Send Us a Message</h3>
+                    <form action="#" method="POST" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-slate-700 text-sm font-medium mb-1">Name</label>
+                            <input type="text" id="name" name="name" class="w-full p-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-slate-700 text-sm font-medium mb-1">Email</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="your@example.com" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-slate-700 text-sm font-medium mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full p-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 hover:scale-105 transition duration-300 transform">
+                            Send Message
+                        </button>
+                    </form>
+                    <p class="mt-4 text-sm text-slate-500 text-center">
+                        Note: For a functional contact form on a static site, you'll need to integrate a third-party service like Formspree or Netlify Forms.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 text-center rounded-t-xl shadow-inner">
+        <div class="container">
+            <p class="text-sm">&copy; 2025 Allura Skincare. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                <span class="text-gray-600">|</span>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
